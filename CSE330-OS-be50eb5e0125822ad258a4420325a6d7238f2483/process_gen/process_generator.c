@@ -48,7 +48,7 @@ void create_process(int nprocesses, int batch_size)
 	//printf("Total number of batches:%d\n",num_of_batch);
 	//printf("Total number of spill over processes:%d\n", left_over);
 	
-	for(int i=0; i<num_of_batch; i++)
+	for(int i=0; i < num_of_batch; i++)
 	{
 		create_batch_process(batch_size);
 		sleep(1);
